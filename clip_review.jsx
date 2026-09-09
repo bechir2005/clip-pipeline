@@ -14,14 +14,22 @@ const C = {
   sage: "#8FA98A",
 };
 
+// NOTE: "value" must exactly match the filename (without .mp3) in your sfx/ folder,
+// since render.py looks the file up as sfx/<value>.mp3. Add/remove entries here
+// whenever you add/remove files from that folder.
 const SFX_OPTIONS = [
   { value: "", label: "No sound effect" },
-  { value: "airhorn", label: "Airhorn" },
-  { value: "vine_boom", label: "Vine boom" },
-  { value: "record_scratch", label: "Record scratch" },
-  { value: "cash_register", label: "Cash register" },
-  { value: "sad_trombone", label: "Sad trombone" },
-  { value: "crowd_cheer", label: "Crowd cheer" },
+  { value: "Circus Theme Song", label: "Circus theme" },
+  { value: "Faah sound effect", label: "Faah" },
+  { value: "Mario Jump - Sound Effect (HD)", label: "Mario jump" },
+  { value: "Nope sound effect", label: "Nope (long)" },
+  { value: "Nope", label: "Nope (short)" },
+  { value: "Punch", label: "Punch" },
+  { value: "Valorant default kill sounds", label: "Valorant kill" },
+  { value: "WHAT!", label: "WHAT!" },
+  { value: "Whoosh Sound Effect No Copyright Free Download", label: "Whoosh" },
+  { value: "World Disasters (Official Audio) Sakti Jhodhan", label: "World Disasters" },
+  { value: "opera", label: "Opera" },
 ];
 
 function makeId() {
